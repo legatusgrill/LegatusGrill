@@ -1,121 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legatus Grill | Link Bio</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                red: "#ff2a2a",
-                dark: "#050505",
-              },
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
-    <style>
-      body {
-        background:
-          radial-gradient(circle at top, rgba(255, 42, 42, 0.22), transparent 35%),
-          #050505;
-        color: white;
-      }
-
-      .card {
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        backdrop-filter: blur(14px);
-        transition: 0.3s ease;
-      }
-
-      .card:hover {
-        transform: translateY(-4px) scale(1.02);
-        border-color: rgba(255, 42, 42, 0.55);
-        box-shadow: 0 18px 45px rgba(255, 42, 42, 0.22);
-      }
-    </style>
-  </head>
-
-  <body class="font-sans min-h-screen">
-    <main class="max-w-md mx-auto px-6 py-10 flex flex-col items-center">
-
-      <header class="text-center mb-10">
-        <img src="/logo.png" class="w-28 h-28 rounded-full mx-auto mb-4" />
-        <h1 class="text-3xl font-bold">Legatus Grill</h1>
-        <p class="text-gray-400 text-sm">
-          Cortes especiais na brasa · Parrilla · Defumação
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Legatus Grill - Cortes especiais na brasa, parrilla e defumação." />
+  <title>Legatus Grill | Link da Bio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="profile-card" aria-label="Links Legatus Grill">
+      <header class="brand-header">
+        <div class="logo-ring">
+          <img id="brandLogo" src="assets/logo.jpg" alt="Logo Legatus Grill" class="brand-logo" />
+        </div>
+        <p class="eyebrow">Experiência na brasa</p>
+        <h1 id="brandName">Legatus Grill</h1>
+        <p id="brandTagline" class="subtitle">Cortes especiais na brasa · Parrilla · Defumação</p>
       </header>
 
-      <section class="w-full space-y-4">
-
-        <!-- CARDÁPIO -->
-        <a
-          id="link-cardapio"
-          target="_blank"
-          class="card rounded-2xl p-5 flex justify-between items-center"
-        >
-          <div>
-            <h3 class="text-lg font-bold">Cardápio Grill</h3>
-            <p class="text-sm text-gray-400">Veja nossos cortes</p>
-          </div>
-
-          <i data-lucide="utensils" class="w-6 h-6 text-red-500"></i>
+      <nav class="link-list" aria-label="Links principais">
+        <a class="action-card" id="menuLink" href="https://app.cardapioweb.com/legatusgrill" target="_blank" rel="noopener noreferrer">
+          <span>
+            <strong>Cardápio Grill</strong>
+            <small>Veja nossos cortes</small>
+          </span>
+          <span class="card-icon icon-red icon-glow" aria-hidden="true">🍴</span>
         </a>
 
-        <!-- WHATSAPP -->
-        <a
-          id="link-whatsapp"
-          target="_blank"
-          class="card rounded-2xl p-5 flex justify-between items-center"
-        >
-          <div>
-            <h3 class="text-lg font-bold">Fale no WhatsApp</h3>
-            <p class="text-sm text-gray-400">Faça seu pedido direto</p>
-          </div>
-
-          <i data-lucide="message-circle" class="w-6 h-6 text-green-500"></i>
+        <a class="action-card" id="whatsappLink" href="https://wa.me/message/D5BFOVFBE5UAN1" target="_blank" rel="noopener noreferrer">
+          <span>
+            <strong>Fale no WhatsApp</strong>
+            <small>Faça seu pedido direto</small>
+          </span>
+          <span class="card-icon icon-green whatsapp-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img" focusable="false">
+              <path d="M16.02 3.2C9 3.2 3.32 8.86 3.32 15.84c0 2.25.6 4.44 1.74 6.36L3.2 28.8l6.78-1.78a12.7 12.7 0 0 0 6.04 1.54c7 0 12.7-5.66 12.7-12.64S23.02 3.2 16.02 3.2Zm0 23.2c-1.9 0-3.74-.5-5.36-1.46l-.38-.22-4.02 1.06 1.08-3.9-.26-.4a10.35 10.35 0 0 1-1.6-5.56c0-5.78 4.72-10.48 10.54-10.48 5.8 0 10.52 4.7 10.52 10.48S21.82 26.4 16.02 26.4Zm5.76-7.84c-.32-.16-1.86-.92-2.14-1.02-.28-.1-.5-.16-.7.16-.2.32-.8 1.02-.98 1.22-.18.22-.36.24-.68.08-.32-.16-1.34-.5-2.56-1.58-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.5.14-.66.14-.14.32-.36.48-.54.16-.18.2-.32.32-.54.1-.22.06-.4-.02-.56-.08-.16-.7-1.68-.96-2.3-.26-.6-.52-.52-.7-.52h-.6c-.22 0-.56.08-.86.4-.3.32-1.12 1.1-1.12 2.66 0 1.58 1.14 3.1 1.3 3.32.16.22 2.24 3.42 5.42 4.8.76.32 1.36.52 1.82.66.76.24 1.46.2 2 .12.62-.1 1.86-.76 2.12-1.5.26-.74.26-1.36.18-1.5-.08-.14-.28-.22-.6-.38Z"/>
+            </svg>
+          </span>
         </a>
+      </nav>
 
+      <section id="menuSection" class="menu-section" hidden>
+        <div class="section-title">
+          <span></span>
+          <h2>Cardápio Grill</h2>
+          <p>Escolha seu corte e fale conosco para consultar disponibilidade.</p>
+        </div>
+        <div id="menuItems" class="menu-grid"></div>
       </section>
-    </main>
 
-    <script>
-      const links = {
-        cardapio: "https://app.cardapioweb.com/legatusgrill#promocoes",
+      <footer class="footer">
+        <p id="footerText">Legatus Grill · Feito na brasa</p>
+      </footer>
+    </section>
+  </main>
 
-        // ================================
-        // 🔴 ALTERE AQUI SEU WHATSAPP
-        // Formato: 55 + DDD + número
-        // Exemplo: 5592999999999
-        // ================================
-
-        whatsapp: "https://wa.me/message/D5BFOVFBE5UAN1"
-      };
-
-      document.getElementById("link-cardapio").href = links.cardapio;
-      document.getElementById("link-whatsapp").href = links.whatsapp;
-
-      lucide.createIcons();
-    </script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
